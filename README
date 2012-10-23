@@ -1,0 +1,21 @@
+= Bahire Hasab
+This is a Ruby implementation of the calculation of the floating holidays like Easter according to the Ethiopian Orthodox Church arithmetic called Bahire Hasab (Abushahir)
+= Install
+ gem install bahire_hasab
+= Usage
+1. Include it in your Gemfile
+   gem 'bahire_hasab'
+2. Add the require and include statements in config/application.rb
+   # ...
+   # This will include the bahire_hasab file
+   require 'bahire_hasab'
+   # This will enable you to use the class Abushahir under the module BahireHasab without
+   # the fully qualified name, i.e BahireHasab::Abushahir
+   # instead you can simply use Abushahir.new
+   include BahireHasab
+= License
+This product is licensed under GPL-version 3 as defined in this site http://www.gnu.org/copyleft/gpl.html
+= Author
+Mesfin Tibebu, mesfinbt@gmail.com
+
+
