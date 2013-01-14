@@ -35,17 +35,19 @@ module BahireHasab
 
     def computeTinteOn(year)
       tk = computeTinteKemer year
-      tk - 1
+      to = tk - 1
+	  to == 0 ? 7 : to
     end
 
     def computeMedeb(year)
       aa = computeAmeteAlem year
+	  #((aa.modulo BahireHasab::Constants::ABIY_KEMER).modulo BahireHasab::Constants::MAEKELAWI_KEMER).modulo BahireHasab::Constants::NIUS_KEMER
       aa.modulo  BahireHasab::Constants::NIUS_KEMER
     end
 
     def computeWenber(year)
       m = computeMedeb year
-      m - 1
+      m == 0 ? 18 :m - 1
     end
 
     def computeAbeqte(year)
