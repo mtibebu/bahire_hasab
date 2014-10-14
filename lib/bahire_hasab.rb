@@ -25,7 +25,7 @@ module BahireHasab
     # * +abeqte+:: Returns the modulo of +wenber+ / 30 if wenber > 30 or just the value of +wenber
     # * +metq+:: Returns the +metq+ for the year
     # * +mebajaHamer+:: Returns the +mebajaHamer+ for the year
-    def self.getKemerat year
+    def getKemerat year
       k = BahireHasab::Kemerat::Kemer.new
       kemerat = BahireHasab::Constants.getKemerat
       kemerat[:ameteAlem] = k.computeAmeteAlem year
@@ -57,7 +57,7 @@ module BahireHasab
     # * +tsomeHawaryat+:: The name and date in Ethiopian Calendar when the Fast of the Apostles starts (The Monday after the Pentecost Sunday)
     # * +tsomeDihnet+:: The name and date in Ethiopian Calendar when the Wednesdays and Fridays fast begins (The Wednesday after the Pentecost Sunday)
 
-    def self.getBealat year
+    def getBealat year
       b = BahireHasab::BealatnaAtswamat::Bealat.new
       bealat = BahireHasab::Constants.getBealat
       b.getBealeYohannes year
