@@ -151,7 +151,7 @@ module BahireHasab
       bYoh = getBealeYohannes year
       tinteElet = bYoh.bealElet
       tinteEletNo = tinteElet.eletNo
-      eletNo = kenat - (kenat / 7) * 7
+      eletNo = kenat - (kenat % 7) * 7
       if eletNo == 0
         if tinteEletNo == 1
           eletNo = 6
