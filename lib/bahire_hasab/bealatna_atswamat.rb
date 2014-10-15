@@ -165,7 +165,7 @@ module BahireHasab
       end
       eletNo = eletNo + 1
       elet = nil
-      @eletat.each_value{|v|  if v.eletNo == eletNo then elet = v end }
+      @eletat.each{|k,v|  if v.eletNo == eletNo then elet = @eletat[k] end }
       return elet
     end
 
