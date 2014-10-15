@@ -3,3 +3,4 @@ doc/
 .DS_Store
 lib/.DS_Store
 lib/bahire_hasab/.DS_Store
+*.swp

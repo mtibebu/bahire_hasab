@@ -40,9 +40,9 @@ module BahireHasab
       beal = @bealat[:nenewe]
       bealeMetq = getBealeMetq year
       jd = bealeMetq.jd + bealeMetq.bealElet.daysToNenewe
-      beal.jd = jd
-      beal.date = getEthDateFromDays year, jd
-      beal.bealElet = getEletLeAmetuQen year, jd
+      beal[:jd] = jd
+      beal[:date] = getEthDateFromDays year, jd
+      beal[:bealElet] = getEletLeAmetuQen year, jd
       return beal
     end
 
@@ -149,9 +149,9 @@ module BahireHasab
     private
     def getEletLeAmetuQen year, kenat
       bYoh = getBealeYohannes year
-      tinteElet = bYoh.bealElet
+      tinteElet = bYoh[:bealElet]
       tinteEletNo = tinteElet.eletNo
-      eletNo = kenat - (kenat % 7) * 7
+      eletNo = kenat - (kenat / 7) * 7
       if eletNo == 0
         if tinteEletNo == 1
           eletNo = 6
@@ -164,8 +164,9 @@ module BahireHasab
         eletNo = eletNo + tinteEletNo - 2
       end
       eletNo = eletNo + 1
+      if(eletNo > 7) then eletNo = eletNo % 7 end
       elet = nil
-      @eletat.each{|k,v|  if v.eletNo == eletNo then elet = @eletat[k] end }
+      @eletat.each{|k,v|  if v[:eletNo] == eletNo then elet = @eletat[k] end }
       return elet
     end
 
