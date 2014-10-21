@@ -145,6 +145,12 @@ module BahireHasab
       beal.bealElet = getEletLeAmetuQen year, jd
       return beal
     end
+    
+    def getMeskel year
+      beal = @bealat[:meskel]
+      beal.date = year.to_s + "-01-17"
+      beal.bealElet = getEletLeAmetuQen year, 17
+    end
 
     private
     def getEletLeAmetuQen year, kenat

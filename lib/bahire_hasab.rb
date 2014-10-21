@@ -61,6 +61,7 @@ module BahireHasab
       b = BahireHasab::BealatnaAtswamat::Bealat.new
       bealat = BahireHasab::Constants.getBealat
       b.getBealeYohannes year
+      b.getMeskel year
       b.getBealeMetq year
       b.getNenewe year
       b.getAbiyTsom year

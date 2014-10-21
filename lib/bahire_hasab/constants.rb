@@ -29,7 +29,14 @@ module BahireHasab
            :tsomeHawaryat => Beal.new("Tsome Hawaryat", 10, 29, nil, nil, 0),
            :tsomeDihnet => Beal.new("Tsome Dihnet", 11, 1, nil, nil, 0),
            :bealeYohannes => Beal.new("Beale Yohannes", 12, -1, nil, nil, 0),
-           :bealeMetq => Beal.new("Beale Metq", 13, -1, nil, nil, 0)}
+           :bealeMetq => Beal.new("Beale Metq", 13, -1, nil, nil, 0),
+           :meskel => Beal.new("Meskel", 14, -1, nil, nil, 0),
+           :lidet => Beal.new("Lidet", 15, -1, nil, nil, 0),
+           :timket => Beal.new("Timket", 16, -1, nil, nil, 0),
+           :qanaZeGelila => Beal.new("Qana Ze Gelila", 17, -1, nil, nil, 0),
+           :tsomeFilseta => Beal.new("Tsome Filseta", 18, -1, nil, nil, 0),
+           :debreTabor => Beal.new("Debre Tabor", 19, -1, nil, nil, 0),
+           :filseta => Beal.new("Filseta", 20, -1, nil, nil, 0)}
 
   @@kemerat =  {:ameteAlem=>0, :meteneRabiet=>0, :tinteKemer=>0, :medeb=>0,
               :wenber => 0, :abeqte=>0, :metq=>0, :mebajaHamer=>0,
