@@ -169,7 +169,7 @@ module BahireHasab
     
     def getTimket year
       beal = @bealat[:timket]
-      jd = 161
+      jd = 131
       beal.date = getEthDateFromDays year, jd
       beal.bealElet = getEletLeAmetuQen year, jd
     end
