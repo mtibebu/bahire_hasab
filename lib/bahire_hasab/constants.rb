@@ -33,7 +33,6 @@ module BahireHasab
            :meskel => Beal.new("Meskel", 14, -1, nil, nil, 0),
            :lidet => Beal.new("Lidet", 15, -1, nil, nil, 0),
            :timket => Beal.new("Timket", 16, -1, nil, nil, 0),
-           :qanaZeGelila => Beal.new("Qana Ze Gelila", 17, -1, nil, nil, 0),
            :tsomeFilseta => Beal.new("Tsome Filseta", 18, -1, nil, nil, 0),
            :debreTabor => Beal.new("Debre Tabor", 19, -1, nil, nil, 0),
            :filseta => Beal.new("Filseta", 20, -1, nil, nil, 0)}

@@ -151,6 +151,49 @@ module BahireHasab
       beal.date = year.to_s + "-01-17"
       beal.bealElet = getEletLeAmetuQen year, 17
     end
+    
+    def getLidet year
+      beal = @bealat[:lidet]
+      jd = 119
+      if isLeap? year then jd = 118 end
+      beal.date = getEthDateFromDays year, jd
+      beal.bealElet = getEletLeAmetuQen year, jd
+    end
+    
+    def getTimket year
+      beal = @bealat[:timket]
+      jd = 161
+      beal.date = getEthDateFromDays year, jd
+      beal.bealElet = getEletLeAmetuQen year, jd
+    end
+    
+    def getTimket year
+      beal = @bealat[:timket]
+      jd = 161
+      beal.date = getEthDateFromDays year, jd
+      beal.bealElet = getEletLeAmetuQen year, jd
+    end
+    
+    def getTsomeFilseta year
+      beal = @bealat[:tsomeFilseta]
+      jd = 331
+      beal.date = getEthDateFromDays year, jd
+      beal.bealElet = getEletLeAmetuQen year, jd
+    end
+    
+    def getDebreTabor year
+      beal = @bealat[:debreTabor]
+      jd = 343
+      beal.date = getEthDateFromDays year, jd
+      beal.bealElet = getEletLeAmetuQen year, jd
+    end
+    
+    def getFilseta year
+      beal = @bealat[:filseta]
+      jd = 346
+      beal.date = getEthDateFromDays year, jd
+      beal.bealElet = getEletLeAmetuQen year, jd
+    end
 
     private
     def getEletLeAmetuQen year, kenat
@@ -182,6 +225,10 @@ module BahireHasab
       day = mod == 0 ? 30 : kenat.modulo(30)
       return "#{year}-#{month}-#{day}"
     end
+    
+  	def isLeap? year
+  		return (year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0))
+  	end
   end
   end
 end

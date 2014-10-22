@@ -63,6 +63,8 @@ module BahireHasab
       b.getBealeYohannes year
       b.getMeskel year
       b.getBealeMetq year
+      b.getLidet year
+      b.getTimket year
       b.getNenewe year
       b.getAbiyTsom year
       b.getDebreZeit year
@@ -74,6 +76,9 @@ module BahireHasab
       b.getBealeHamsa year
       b.getTsomeHawaryat year
       b.getTsomeDihnet year
+      b.getTsomeFilseta year
+      b.getDebreTabor year
+      b.getFilseta year
       return bealat
     end
   end
