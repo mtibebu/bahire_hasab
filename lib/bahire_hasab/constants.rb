@@ -21,8 +21,8 @@ module BahireHasab
 
   @@bealat = {
                :bealeYohannes => Beal.new("Beale Yohannes", 12, -1, nil, nil, 0),
-               :bealeMetq => Beal.new("Beale Metq", 13, -1, nil, nil, 0),
                :meskel => Beal.new("Meskel", 14, -1, nil, nil, 0),
+               :bealeMetq => Beal.new("Beale Metq", 13, -1, nil, nil, 0),
                :lidet => Beal.new("Lidet", 15, -1, nil, nil, 0),
                :timket => Beal.new("Timket", 16, -1, nil, nil, 0),
                :nenewe => Beal.new("Nenewe", 1, 0, nil, nil, 0),
